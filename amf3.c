@@ -7,6 +7,10 @@
 #include "config.h"
 #endif
 
+#ifndef PHP_FE_END
+#define PHP_FE_END {NULL,NULL,NULL}
+#endif
+
 #include "php.h"
 #include "php_amf3.h"
 #include "ext/standard/info.h"
